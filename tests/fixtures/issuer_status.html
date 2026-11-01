@@ -1,0 +1,843 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head prefix="og: http://ogp.me/ns#">
+    <!-- dont add run at server in this line-->
+    
+    <meta name="charset" content="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="fontiran.com:license" content="3WQB2B" />
+    
+        <meta property='og:site_name' content="فرابورس ایران" />
+        
+        
+        <meta property="og:type" content="website" />
+    
+    <link rel="SHORTCUT ICON" href="/Images/lg.png?1" />
+    <script type="text/javascript">
+        var jsIsEnglish = 'fa' == 'en'; //global variable for english site
+    </script>
+    <script src="/Scripts/v_639036512577336099/Common.js" type="text/javascript"></script>
+    <!-- Matomo -->
+    <script> 
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//analytics.ifbdev.ir/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="/v_639239620326806925/Css.css"
+        media="screen" />
+    
+
+    <style>
+        #stickyModal {
+            width: 300px;
+            right: 0;
+            bottom: auto;
+            top: 108px;
+        }
+
+            #stickyModal .modal-body {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 15px 15px 25px;
+            }
+
+            #stickyModal .modal-content-bg {
+                background: #d9d7e9 url(/Images/pattern.png) repeat;
+            }
+
+            #stickyModal .modal-dialog {
+                width: 250px;
+                margin: 0 15px 30px 0;
+            }
+
+        .contentpanel {
+            max-width: calc(100% - 295px);
+        }
+
+        .tableContainer {
+            max-width: calc(100% - 250px);
+        }
+
+        .level1 {
+            max-width: calc(100% - 500px);
+        }
+
+        .ticker {
+            max-width: calc(100% - 95px);
+        }
+
+        @media(max-width:1330px) {
+            .level1 {
+                max-width: calc(100% - 418px);
+            }
+        }
+
+        @media(max-width:1270px) {
+            .level1 {
+                max-width: calc(100% - 218px);
+            }
+        }
+
+        @media(max-width:992px) {
+            .level1 {
+                max-width: calc(100% - 59px);
+            }
+        }
+
+        .sub-menu-list-paziresh {
+            /*border-right: 1px solid #efefef;*/
+            padding-right: 25px;
+            font-size: 14px;
+        }
+
+            .sub-menu-list-paziresh a:not(.sub-menu__header) {
+                white-space: nowrap;
+                color: #8f423e;
+                display: block;
+                position: relative;
+                padding: 3px 0 3px 0;
+                -webkit-transition: 300ms ease color, 300ms ease padding;
+                -moz-transition: 300ms ease color, 300ms ease padding;
+                transition: 300ms ease color, 300ms ease padding;
+                font-size: 14px;
+            }
+    </style>
+    
+    
+    
+    <title>وضعیت ناشران نماد های فرابورس ایران</title>
+    <meta name="description" content="وضعیت ناشران نمادهای فرابورس ایران، رویه اجرایی مواد 39 و 40 مکرر دستورالعمل پذیرش، عرضه و نقل‌وانتقال اوراق بهادار در فرابورس " />
+    <meta name="keywords" content="وضعیت ناشران نماد های فرابورس ایران" />
+    <link rel="canonical" href="https://www.ifb.ir/IFBSymbolState.aspx" />
+
+    
+
+    <style type="text/css">
+        .state {
+            background-color: #872434;
+            color: #fff;
+            padding: 5px 15px;
+            border: 1px solid #fff;
+            float: right;
+            cursor: pointer;
+            border-bottom: 0;
+            text-align: center;
+        }
+
+            .selected, .state:hover {
+                background-color: #1e1e24;
+            }
+
+        .grp {
+            display: none;
+            clear: both;
+        }
+
+        .DewCombo {
+            color: #464646;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+            .DewCombo input {
+                width: 248px;
+                padding: 0 5px;
+                height: 30px;
+                font-size: inherit;
+                font-family: BMitra,Serif;
+                border: 1px solid #AAA;
+                color: #464646;
+            }
+
+        .DewOptions {
+            width: 260px; /*border: 1px solid #AAA;*/
+            max-height: 150px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            position: absolute;
+        }
+
+            .DewOptions div {
+                display: none;
+                padding: 0px 5px;
+                -moz-box-shadow: inset 0px 39px 0px -24px #ffffff;
+                -webkit-box-shadow: inset 0px 39px 0px -24px #ffffff;
+                box-shadow: inset 0px 39px 0px -24px #ffffff;
+                background-color: #ffffff;
+                border: 1px solid #AAA;
+                border-top: 0;
+                color: #666666;
+                text-decoration: none;
+                text-shadow: 0px 1px 0px #ffffff;
+            }
+
+                .DewOptions div:hover {
+                    background-color: #f6f6f6;
+                }
+
+        .hasfile {
+            height: 30px;
+            display: block;
+            color: #872434;
+            text-align: center;
+        }
+
+            .hasfile:hover {
+                color: inherit;
+            }
+
+        .tblGrp {
+            width: 100%;
+            border-collapse: collapse;
+            color: #585858;
+        }
+
+            .tblGrp tr:nth-child(1) {
+                background-color: #872434;
+                color: #fff !important;
+                text-align: center;
+                border-bottom: 1px solid #fff;
+                width: 90px;
+            }
+
+            .tblGrp td {
+                text-align: center;
+            }
+
+                .tblGrp td:nth-child(7) {
+                    width: 40px;
+                }
+
+                .tblGrp td:nth-child(1) {
+                    width: 43px;
+                }
+
+        .grpHead {
+            background-color: #333;
+            color: #fff !important;
+            border-bottom: 1px solid #fff;
+        }
+
+        .tblGrp th, .tblGrp td {
+            border: 1px solid #d9d9d9;
+        }
+
+        strong {
+            color: Red;
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/Scripts/IntlDate.js" type="text/javascript"></script>
+    <script src="/Scripts/PersianDate.js" type="text/javascript"></script>
+    
+</head>
+<body class="persian">
+    <!--<div class="black-banner"></div>-->
+
+    <div class="centerview">
+        <div class="blackheader">
+            <div class="container">
+                <img src="/Images/IranFlag.svg" alt="ایران" class="iran-flag" width="27" height="20" />
+                <span class="hidden-xs">به‌روزرسانی :</span>
+                <label id="lbldt"> یکشنبه 10 آبان ماه ساعت 09:18:42</label>
+                <a id="marketstat" class="marketstat" 
+                    title="Market is opened"
+                    data="True">
+                    <i class="icon-sun"></i>
+                </a>
+                <div class="floatleft" style="word-spacing: 1px;">
+                    <a href="/" class="NotNeedQueryString">فارسی</a>
+                    |&nbsp;<a href="/default.aspx?lang=en" class="NotNeedQueryString">English</a>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        <div class="headerL2 clearfix">
+            <div class="container">
+                <div class="nav-icon">
+                    <span></span>
+                </div>
+                <a class="logo" href="/">
+                    <img src="/Images/logo.svg" alt="فرابورس ایران" height="71" /></a>
+                <ul class="level1 clearfix">
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            اطلاعات شرکت</span>
+                        <div class="sub-menu">
+                            <ul class="sub-menu-list">
+                                <li><a target="_blank" href="/BOD.aspx">
+                                    هیئت مدیره</a></li>
+                                <li><a target="_blank" href="/CommitteeMembers.aspx">
+                                    کمیته‌های حاکمیتی و تخصصی هیئت‌مدیره</a></li>
+
+                                
+                                
+                                <li><a target="_blank" href="/Files/ارکان استراتژی سند راهبردی دوره چهارم.pdf"> ارکان استراتژی سند راهبردی دوره چهارم</a></li>
+
+                                <li><a target="_blank" class="NotNeedQueryString" href="/Files/مسئولیت اجتماعی.pdf">
+                                    مسئولیت اجتماعی</a></li>
+                                 <li>
+     <a target="_blank" class="NotNeedQueryString" href="/Files/بیانیه چشم_انداز.pdf">
+         بیانیه چشم‌انداز
+     </a>                       </li>
+
+                                    <li><a target="_blank" href="/Managment.aspx">
+                                    چارت سازمانی</a></li>
+                           
+                                <li><a target="_blank" href="/cms.aspx?tabId=321">
+                                    تاریخچه فرابورس</a></li>
+
+                                <li><a target="_blank" href="/Files/asanameh.pdf">
+                                    اساسنامه</a></li>
+
+                                 <li><a target="_blank" href="/cms.aspx?tabId=241">
+                                    گزارش‌های مالی</a></li>
+                                <li><a target="_blank" href="/InvestorRelations/InvestorRelations.aspx">
+                                    امور سهام</a></li>
+
+                                <li><a target="_blank" class="NotNeedQueryString" href="https://farasun.ifb.ir/PublicReport/ShowAllBrokers">
+                                    لیست کارگزاران عضو</a></li>
+
+                                <li><a target="_blank" href="/ContactInfo.aspx">
+                                    تماس با ما</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            پذیرش</span>
+
+                        <div class="sub-menu" style="padding: 38px;" >
+                            <ul class="sub-menu-list-paziresh">
+                                <li>
+                                    <span class="sub-menu__header">
+                                        پذیرش
+                                    </span>    
+                                    <ul>
+                                        
+                                        
+                                           <li><a style="color: #8f423e" target="_blank" class="NotNeedQueryString"  href="/listing/ListingBoardNewFormat.aspx" >
+                                            اعضای هیئت پذیرش</a></li>
+
+                                        
+
+                                        <li><a style="color: #8f423e" target="_blank" href="/ListingFiles.aspx">
+
+                                            فرم‌ها
+                                            </a></li>
+                                         <li><a target="_blank" class="NotNeedQueryString" href="https://farasun.ifb.ir/PublicReport/ShowListingConsultants">
+                                            مشاوران پذیرش</a></li>
+                                         <li><a href="https://www.ifb.ir/FAQ.aspx?Id=2">
+                                            سوالات متداول</a></li>
+
+                                       
+
+
+                                        
+                                       
+                                        
+
+                                       
+                                           
+                                       </ul>
+
+
+
+
+
+                                </li>
+                                <li>
+                                    <span class="sub-menu__header">
+                                        اطلاعات آماری</span>
+                                       
+
+                                      <ul>
+                                          <li><a target="_blank" href="/listing/ListingFileStatus.aspx">
+                                            وضعیت شرکت های پذیرش شده</a></li>
+
+                                           
+
+                                           
+                                        
+
+                                        
+
+                                       
+
+                                       
+                                        
+                                         
+                                           <li><a target="_blank" href='/Files/listing/PerformanceOfAdmissionsCounselors.xlsx'">
+                                            عملکرد مشاوران پذیرش</a></li>
+
+
+                                        <li><a target="_blank" href='/Files/CrowdFunding/گزارش عملکرد شرکتهای ارزش گذار1404.xlsx'">
+                                        عملکرد شرکت های ارزش گذار</a></li>
+
+                                       
+                                        </ul>
+
+                                    
+                                    
+                                </li>
+                            </ul>
+                            <ul class="sub-menu-list">
+                                <li>
+                                    
+                                    <ul>
+                                        
+                                     
+                                    </ul>
+                                </li>
+                                
+
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            بازارها و محصولات</span>
+
+                        <div class="sub-menu">
+                            <ul class="sub-menu-list">
+                                <li>
+                                    <ul>
+                                        <li><a class="sub-menu__header" href="/markets.aspx?id=1">
+                                            بازار اول</a></li>
+                                        <li><a class="sub-menu__header" href="/markets.aspx?id=2">
+                                            بازار دوم</a></li>
+                                        <li><a class="sub-menu__header" href="/markets.aspx?id=4">
+                                            بازار نوآفرین</a></li>
+                                        <li><a class="sub-menu__header" href="/markets.aspx?id=3">
+                                            بازار پایه</a></li>
+                                        <li><a class="sub-menu__header" href="/markets.aspx?id=6">
+                                            بازار توافقی</a></li>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                بازار سوم</span>
+                                            <ul>
+                                                
+
+                                                <li><a target="_blank" href="/ThirdMarket/ThirdMarketMenu.aspx">
+                                                    عرضه یکجا</a></li>
+
+                                                <li><a target="_blank" href="/ThirdMarket/UnderWritingMenu.aspx">
+                                                    پذیره نویسی</a></li>
+
+                                                
+                                            </ul>
+                                        </li>
+
+                                        
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <ul class="sub-menu-list">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                ابزار و نهادها</span>
+                                            <ul>
+                                                <li><a target="_blank" href="/cms.aspx?tabId=208">
+                                                    صندوق‌های سرمایه گذاری زمین و ساختمان</a></li>
+                                                <li><a target="_blank" href="/ETF.aspx">
+                                                    صندوق‌های سرمایه گذاری قابل معامله(ETF)</a></li>
+                                                <li><a target="_blank" href="/MFI/Reit.aspx">
+                                                    صندوق‌های املاک و مستغلات</a></li>
+                                                <li><a target="_blank" href="/MFT/VC.aspx">
+                                                    صندوق‌های جسورانه وخصوصی</a></li>
+                                                <li><a target="_blank" href="/MFI/FinancialInstrument.aspx">
+                                                    اوراق تامین مالی استاندارد</a></li>
+                                                <li><a target="_blank" href="/MFI/qualifiedMFI.aspx">
+                                                    اوراق تامین مالی واجد شرایط خاص</a></li>
+                                                <li><a target="_blank" href="/cms.aspx?tabId=209">
+                                                    اسناد خزانه اسلامی</a></li>
+                                                <li><a target="_blank" href="/cms.aspx?tabId=229">
+                                                    تسهیلات مسکن</a></li>
+                                                <li><a target="_blank" href="/Finstars/CrowdFunding.aspx">
+                                                    تامین مالی جمعی</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                ابزارهای مشتقه</span>
+                                            <ul>
+                                                <li><a target="_blank" href="/markets.aspx?id=5">
+                                                    اوراق تبعی</a></li>
+                                                <li><a target="_blank" href="/markets.aspx?id=7">
+                                                    اوراق اختیار معامله</a></li>
+                                                 <li><a target="_blank" href="/markets.aspx?id=8">
+                                                    قراردادهای آتی</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            مرکز داده</span>
+
+                        <div class="sub-menu">
+                            <ul class="sub-menu-list">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                شاخص</span>
+                                            <ul>
+                                                <li><a target="_blank" href="/IFBindex.aspx#TotalDiv_tab">
+                                                    شاخص کل فرابورس ایران</a></li>
+                                                <li><a target="_blank" href="/IFBindex.aspx#TotalSameWeightDiv_tab">
+                                                    شاخص کل هم وزن فرابورس ایران</a></li>
+                                                <li><a target="_blank" href="/IFBindex.aspx#PriceDiv_tab">
+                                                    شاخص قیمت فرابورس ایران</a></li>
+                                                <li><a target="_blank" href="/IFBindex.aspx#SameWeightPriceDiv_tab">
+                                                    شاخص قیمت هم وزن فرابورس ایران</a></li>
+
+                                                <li><a target="_blank" href="/SukukIndex.aspx">
+                                                    شاخص کل صکوک فرابورس ایران(Sindex)</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                دیدبان</span>
+                                            <ul>
+                                                <li><a target="_blank" href="/StockQoute.aspx">
+                                                    دیدبان بازار</a></li>
+                                                <li><a target="_blank" href="/OptionStockQuote.aspx">
+                                                    دیدبان بازار اوراق مشتقه</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                گزارش های آماری
+                                            </span>
+                                            <ul>
+                                                <li><a target="_blank" href="/datareporter/periodicalreport.aspx">
+                                                    گزارش‌های دوره ای</a></li>
+                                                <li><a target="_blank" href="/datareporter/DailySukukTrades.aspx">
+                                                    آمار معاملات روزانه اوراق مالی اسلامی</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                ارزش بازار
+                                            </span>
+                                            <ul>
+                                                <li><a target="_blank" href="/SepratedByIndustry.aspx">
+                                                    ارزش بازار به تفکیک صنعت</a></li>
+                                                <li><a target="_blank" href="/DataReporter/GroupByMarket.aspx">
+                                                    ارزش بازار به تفکیک بازار</a></li>
+                                                <li><a target="_blank" href="/DataReporter/MarketMap.aspx">
+                                                    ارزش بازار به تفکیک نماد</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="sub-menu__header" target="_blank" href="/DataReporter/MarketMap.aspx">
+                                            نقشه بازار</a></li>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                بازده اوراق</span>
+                                            <ul>
+                                                <li><a target="_blank" href="/YTM.aspx">
+                                                    محاسبه بازده اوراق</a></li>
+                                                <li><a target="_blank" href="/NelsonIndex.aspx">
+                                                    منحنی بازده اوراق با درآمد ثابت</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <ul class="sub-menu-list">
+                           
+                                <li><a class="sub-menu__header" target="_blank" href="/OptionCalculation.aspx">
+                                    ماشین حساب ارزش‌گذاری اختیار معامله</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/Files/IFB Commission Rates2.pdf">
+                                    کارمزد فرابورس</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/RnD.aspx">
+                                    مطالعات و پژوهش‌ها</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/Issuers.aspx?id=2">
+                                    افزایش سرمایه در جریان</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/IFBSymbolState.aspx">
+                                    وضعیت شفافیت اطلاعاتی ناشران</a></li>
+                                
+                                <li><a class="sub-menu__header" target="_blank" href="/DataReporter/IssuersReport.aspx">
+                                    تاریخچه اطلاعات مالی ناشران فرابورسی</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/MarketMaker/MarketMakingMenu.aspx">
+                                    فهرست اطلاعات بازارگردانی </a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/datareporter/IPO.aspx">
+                                    فهرست عرضه‌های اولیه</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/ThirdMarket/AllUnderWrited.aspx">
+                                    فهرست اوراق بهادار پذیره نویسی شده</a></li>
+                            
+                               
+                                <li><a class="sub-menu__header" target="_blank" href="/DataReporter/SuspendedSymbols.aspx">
+                                    فهرست نمادهای متوقف</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/AllDeletedSymbol.aspx">
+                                    فهرست نمادهای حذف شده</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/Issuers.aspx?id=5">
+                                    انتقال بین بازارهای اول، دوم، نوآفرین و پایه
+</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/Issuers.aspx?id=3">
+                                    شرکت های انتقالی به بورس تهران</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/Issuers.aspx?id=6">
+                                    شرکت‌های انتقالی از بورس تهران</a></li>
+                                
+                                <li><a class="sub-menu__header" target="_blank" href="/PublisherCorporateGovernaceScore.aspx">
+                                     حاکمیت شرکتی ناشران</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            سامانه‌ها و خدمات</span>
+
+                        <div class="sub-menu">
+                            <ul class="sub-menu-list">
+                                <li><a target="_blank" class="NotNeedQueryString" href="https://farasun.ifb.ir/User/Login">
+                                    سامانه فراسان</a></li>
+                                <li><a target="_blank" class="NotNeedQueryString" href="https://farasun.ifb.ir/RequestFollowUp/CompanyLogin">
+                                    سامانه پیگیری درخواست شرکتهای متقاضی</a></li>
+
+                                
+                               
+                                <li><a target="_blank" href="/MFI/ITBTracking.aspx">
+                                    سامانه رهگیری اسناد خزانه
+                                </a></li>
+                                <li><a target="_blank" href="https://farasun.ifb.ir/didban/didban">
+                                    سامانه گزارش‌دهی تخلفات
+                                </a></li>
+                                
+                                
+                                <li><a target="_blank" class="NotNeedQueryString" href="https://cf.ifb.ir/User/Login">
+                                    تامین مالی جمعی</a></li>
+                                 <li><a target="_blank" class="NotNeedQueryString" href="https://portal.ifbstock.hamkaransystem.cloud">
+                                   پرتال سهامداران</a></li>
+                                 
+                                
+                            </ul>
+                        </div>
+                    </li>
+                   
+
+                       
+                             
+                               
+                          
+                               
+
+                        
+                           <li class="has-sub">
+       <span class="menu-anchor">
+           <a target="_blank" href="/DataReporter/LegalProvisionReport.aspx"" class="NotNeedQueryString">قوانین و مقررات</a>
+
+       </span>
+
+   </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            <a target="_blank" href="https://www.ifb.ir/CareerOpportunities.aspx" class="NotNeedQueryString">همکاری با ما</a>
+
+                        </span>
+
+                    </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            <a target="_blank" href="https://faraboursetv.com/" class="NotNeedQueryString">فرابورس تی‌وی</a>
+                        </span>
+                    </li>
+                </ul>
+                <div class="searchbar">
+                    <input id="autocomplete" placeholder="جستجوی نماد" />
+                    <i class="icon-search"></i>
+                </div>
+                <div class="current-date hidden">
+                    <table id="Table1" class="floatleft datebar">
+	<tr>
+		<td id="dayOfMonth" class="dayOfMonth">10</td>
+		<td>
+                                <div>
+                                </div>
+                            </td>
+		<td id="monthyear">آبان<br/>1405</td>
+	</tr>
+</table>
+
+                    <i class="icon-calendar"></i>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div class="container mobile-container">
+            <div class="main-column">
+                <div class="contentpanel">
+                    
+    <h1 class="indTitle">وضعیت ناشرانی</h1>
+    
+    <div class="card-box form-group">
+        <a href="/Files/رویه اجرایی.pdf"
+            target="_blank">
+            <i class="icon-pdf" style="font-size: 29px;"></i>
+            رویه اجرایی مواد 39 و 40 مکرر دستورالعمل پذیرش، عرضه و نقل و انتقال اوراق بهادار در فرابورس
+        </a>
+    </div>
+    
+    <div class="clearfix" style="width: 100%; border-bottom: 5px solid #862335;">
+
+        
+
+                <div class="state" id="2">
+                    معامله تحت احتیاط
+                </div>
+            
+
+                <div class="state" id="3">
+                    مشمول فرآیند تعلیق
+                </div>
+            
+
+                <div class="state" id="4">
+                    تعلیق شده بازار پذیرفته شده
+                </div>
+            
+
+                <div class="state" id="6">
+                    لغو پذیرش شده
+                </div>
+            
+
+                <div class="state" id="12">
+                    تعلیق شده بازار پایه
+                </div>
+            
+
+    </div>
+
+    <div class="card-box">
+
+        <div class="tab-content no-padding">
+            
+                    <table class="tblGrp" style="border-collapse: collapse;" cellspacing="0">
+                        <tr>
+                            <th style="text-align: center; width: 20px;">
+                                ردیف
+                            </th>
+                            <th style="text-align: center; width: 82px;">
+                                نماد
+                            </th>
+                            <th class="stateColumn" style="text-align: center;">
+                                وضعیت ناشرانی
+                            </th>
+                            <th style="text-align: center;">
+                                تاریخ اعمال وضعیت 
+                            </th>
+                            <th style="text-align: center; width: 212px;">
+                                دلیل
+                            </th>
+                            <th style="text-align: center; width: 212px;">
+                                متن پیام
+                            </th>
+                            
+                        </tr>
+                
+                    <tr symid="26621" state="2" market="14">
+                        <td>
+                            1
+                        </td>
+                        <td style="width:15%;">
+                            <a target='_blank' href='/Instruments.aspx?id=26621'>
+                                تپسی (پیشگامان فن آوری و دانش آرامیس) </a>
+                        </td>
+                        <td class="stateColumn">
+                            معامله تحت احتیاط
+                        </td>
+                        <td style="width:5%;">
+                            1405/03/30
+                        </td>
+                        <td style="padding: 0px 25px 0 0;">
+                            <ul class='TdUL'><li>نیاز به بررسی وضعیت شفافیت اطلاعاتی ناشر</li></ul>
+                        </td>
+                        <td style="padding: 0px 25px 0 0;">
+                            
+                        </td>
+                       
+                        
+                    </tr>
+                
+                    <tr symid="32068" state="3" market="14">
+                        <td>
+                            1
+                        </td>
+                        <td style="width:15%;">
+                            <a target='_blank' href='/Instruments.aspx?id=32068'>
+                                پتوسعه (س. و توسعه صنایع لاستیک) </a>
+                        </td>
+                        <td class="stateColumn">
+                            مشمول فرآیند تعلیق
+                        </td>
+                        <td style="width:5%;">
+                            1405/08/09
+                        </td>
+                        <td style="padding: 0px 25px 0 0;">
+                            <ul class='TdUL'><li>عدم رعایت الزامات دستورالعمل اجرایی افشای اطلاعات شرکت های ثبت شده نزد سازمان</li></ul>
+                        </td>
+                        <td style="padding: 0px 25px 0 0;">
+                            <ul class='TdUL'><li style='font-weight: 300 !important'>عدم ارائه گزارش فعالیت ماهانه مهر ماه</li></ul>
+                        </td>
+                       
+                        
+                    </tr>
+                
+                    <tr symid="23271" state="3" market="14">
+                        <td>
+                            2
+                        </td>
+                        <td style="width:15%;">
+                            <a target='_blank' href='/Instruments.aspx?id=23271'>
+                                تبرک (گروه کارخانجات صنعتی تبرک) </a>
+                        </td>
+                        <td class="stateColumn">
+                            مشمول فرآیند تعلیق
+                        </td>
+                        <td style="width:5%;">
+                            1405/08/09
+                        </td>
+                        <td style="padding: 0px 25px 0 0;">
+                            <ul class='TdUL'><li>عدم رعایت الزامات دستورالعمل اجرایی افشای اطلاعات شرکت های ثبت شده نزد سازمان</li></ul>
+                        </td>
+                        <td style="padding: 0px 25px 0 0;">
+                            <ul class='TdUL'><li style='font-weight: 300 !important'>عدم ارائه گزارش فعالیت ماهانه مهر ماه</li></ul>
+                        </td>
+                       
+                        
+                    </tr></table></body></html>

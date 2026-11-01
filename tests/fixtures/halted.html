@@ -1,0 +1,1007 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" prefix="og: http://ogp.me/ns#">
+
+<head prefix="og: http://ogp.me/ns#">
+    <!-- dont add run at server in this line-->
+    
+    <meta name="charset" content="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="fontiran.com:license" content="3WQB2B" />
+    
+        <meta property='og:site_name' content="فرابورس ایران" />
+        
+        
+        <meta property="og:type" content="website" />
+    
+    <link rel="SHORTCUT ICON" href="/Images/lg.png?1" />
+    <script type="text/javascript">
+        var jsIsEnglish = 'fa' == 'en'; //global variable for english site
+    </script>
+    <script src="/Scripts/v_639036512577336099/Common.js" type="text/javascript"></script>
+    <!-- Matomo -->
+    <script> 
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//analytics.ifbdev.ir/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="/v_639239620326806925/Css.css"
+        media="screen" />
+    
+
+    <style>
+        #stickyModal {
+            width: 300px;
+            right: 0;
+            bottom: auto;
+            top: 108px;
+        }
+
+            #stickyModal .modal-body {
+                font-size: 14px;
+                font-weight: 400;
+                padding: 15px 15px 25px;
+            }
+
+            #stickyModal .modal-content-bg {
+                background: #d9d7e9 url(/Images/pattern.png) repeat;
+            }
+
+            #stickyModal .modal-dialog {
+                width: 250px;
+                margin: 0 15px 30px 0;
+            }
+
+        .contentpanel {
+            max-width: calc(100% - 295px);
+        }
+
+        .tableContainer {
+            max-width: calc(100% - 250px);
+        }
+
+        .level1 {
+            max-width: calc(100% - 500px);
+        }
+
+        .ticker {
+            max-width: calc(100% - 95px);
+        }
+
+        @media(max-width:1330px) {
+            .level1 {
+                max-width: calc(100% - 418px);
+            }
+        }
+
+        @media(max-width:1270px) {
+            .level1 {
+                max-width: calc(100% - 218px);
+            }
+        }
+
+        @media(max-width:992px) {
+            .level1 {
+                max-width: calc(100% - 59px);
+            }
+        }
+
+        .sub-menu-list-paziresh {
+            /*border-right: 1px solid #efefef;*/
+            padding-right: 25px;
+            font-size: 14px;
+        }
+
+            .sub-menu-list-paziresh a:not(.sub-menu__header) {
+                white-space: nowrap;
+                color: #8f423e;
+                display: block;
+                position: relative;
+                padding: 3px 0 3px 0;
+                -webkit-transition: 300ms ease color, 300ms ease padding;
+                -moz-transition: 300ms ease color, 300ms ease padding;
+                transition: 300ms ease color, 300ms ease padding;
+                font-size: 14px;
+            }
+    </style>
+    
+    
+    
+    <title>فهرست نمادهای متوقف</title>
+    <link rel="canonical" href="https://www.ifb.ir/DataReporter/SuspendedSymbols.aspx" />
+    
+
+
+    <style type="text/css">
+        .tableParent {
+            margin: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .mGrid {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+            .mGrid td {
+                padding: 2px;
+                border: solid 1px #ccc;
+                color: #717171;
+            }
+
+            .mGrid th {
+                padding: 2px 6px;
+                color: #fff;
+                background-color: #872434;
+                font-size: 0.9em;
+                text-align: center;
+            }
+
+            .mGrid .alt {
+                background-color: #eee;
+            }
+
+            .mGrid .pgr {
+                background-color: #872434;
+            }
+
+                .mGrid .pgr table {
+                    margin: 5px 0;
+                }
+
+                .mGrid .pgr td {
+                    border-width: 0;
+                    padding: 0 6px;
+                    border-left: solid 1px #999;
+                    font-weight: 600;
+                    color: #fff;
+                    line-height: 12px;
+                    font-size: 1.1em;
+                }
+
+                .mGrid .pgr a {
+                    color: #999;
+                    text-decoration: none;
+                }
+
+                    .mGrid .pgr a:hover {
+                        color: #fff;
+                        text-decoration: none;
+                    }
+
+        .txtfilter {
+            border: 1px solid #ccc;
+            color: #666;
+            height: 20px;
+            padding: 0 5px;
+            width: 155px;
+            margin-bottom: 10px;
+        }
+
+        .lblerror {
+            color: DarkRed;
+            font-size: 0.8em;
+        }
+
+        .searchbtn {
+            width: 28px;
+            height: 28px;
+            background: #fff url('/images/searchicon.png?1') no-repeat;
+            background-position: -27px 0;
+            position: relative;
+            cursor: pointer;
+        }
+
+            .searchbtn:hover {
+                background-position: 0 0;
+            }
+
+        .filterdiv {
+            background-color: #F8F8F8;
+            border-color: #ccc;
+            border-style: solid;
+            padding: 15px;
+            border-width: 2px;
+        }
+
+        .close {
+            border-width: 0;
+            padding: 25px 0 0 0;
+            width: 0;
+            height: 0;
+        }
+
+        .cmstitr {
+            border-bottom: 1px solid #872434;
+            font-size: 17px;
+            color: #872434;
+            margin-bottom: 15px;
+            padding-bottom: 7px;
+        }
+
+        .example {
+            color: #aaa !important;
+            font-size: x-small !important;
+        }
+
+        .myDropDownList {
+            border-color: rgb(204, 204, 204);
+            color: #666;
+            width: 167px;
+            margin-bottom: 10px;
+        }
+
+        .chklist tr {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .chklist input[type='checkbox'] {
+            margin-left: 7px;
+            vertical-align: middle;
+        }
+        /*Calendar CSS*/
+        .calendarWrapper {
+            background-color: #872434;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .myCalendar {
+            background-color: #f2f2f2;
+            width: 156px;
+            border: none !important;
+        }
+
+            .myCalendar a {
+                text-decoration: none;
+            }
+
+            .myCalendar .myCalendarTitle {
+                font-weight: 600;
+                height: 40px;
+                line-height: 40px;
+                background-color: #4CCAEF;
+                color: #ffffff;
+                border: none !important;
+            }
+
+            .myCalendar th.myCalendarDayHeader {
+                height: 25px;
+            }
+
+            .myCalendar tr {
+                border-bottom: solid 1px #ddd;
+            }
+
+            .myCalendar table tr {
+                border-bottom: none !important;
+            }
+
+            .myCalendar tr:last-child td {
+                border-bottom: none;
+            }
+
+            .myCalendar tr td.myCalendarDay, .myCalendar tr th.myCalendarDayHeader {
+                border-right: solid 1px #ddd;
+            }
+
+            .myCalendar tr td:last-child.myCalendarDay, .myCalendar tr th:last-child.myCalendarDayHeader {
+                border-right: none;
+            }
+
+
+            .myCalendar td.myCalendarDay:nth-child(7) a {
+                color: #c52e2e !important;
+            }
+
+            .myCalendar .NextPrevStyle {
+                text-align: center;
+            }
+
+                .myCalendar .NextPrevStyle a {
+                    font-size: 1px;
+                }
+
+                .myCalendar .NextPrevStyle:nth-child(1) a {
+                    color: #4CCAEF !important;
+                    background: url("prevMonth.png") no-repeat center center;
+                }
+
+                    .myCalendar .NextPrevStyle:nth-child(1) a:hover, .myCalendar .myCalendarNextPrev:nth-child(3) a:hover {
+                        background-color: transparent;
+                    }
+
+                .myCalendar .NextPrevStyle:nth-child(3) a {
+                    color: #4CCAEF !important;
+                    background: url("nextMonth.png") no-repeat center center;
+                }
+
+            .myCalendar td.myCalendarSelector a {
+                background-color: #25bae5;
+            }
+
+            .myCalendar .myCalendarDayHeader a, .myCalendar .myCalendarDay a, .myCalendar .myCalendarSelector a, .myCalendar .NextPrevStyle a {
+                display: block;
+                line-height: 20px;
+            }
+
+            .myCalendar .TodayDayStyle {
+                background-color: #f2f2f2;
+                -webkit-box-shadow: 1px 1px 8px 1px #8f8f8f;
+                box-shadow: 1px 1px 8px 1px #8f8f8f;
+                display: inline-block;
+                width: 22px !important;
+                height: 19px !important;
+                border: 2px solid #f2f2f2;
+                margin-left: -1px;
+                margin-top: -1px;
+                position: relative;
+            }
+
+                .myCalendar .TodayDayStyle a {
+                    color: #25bae5 !important;
+                    font-weight: 600;
+                }
+
+                    .myCalendar .TodayDayStyle a:after {
+                        content: "TODAY";
+                        color: #000;
+                        font-size: 0.5em;
+                        display: inline-block;
+                        pointer-events: none;
+                        width: 100%;
+                        float: left;
+                    }
+
+            .myCalendar .myCalendarDay a:hover, .myCalendar .myCalendarSelector a:hover {
+                background-color: #25bae5;
+            }
+
+        .dewcalendar {
+            position: absolute;
+            background-color: #fff;
+            border: 0 !important;
+        }
+
+            .dewcalendar td {
+                padding: 2px;
+            }
+
+            .dewcalendar .TitleStyle {
+                height: 30px;
+                line-height: 30px;
+                background-color: #872434;
+                color: #ffffff;
+                border: none !important;
+            }
+
+            .dewcalendar tr td, .dewcalendar tr th {
+                border-left: solid 1px #444;
+            }
+
+                .dewcalendar tr td.OtherMonthDayStyle a {
+                    color: #888 !important;
+                }
+
+                .dewcalendar tr td:last-child, .dewcalendar tr th:last-child {
+                    border-left: 0 !important;
+                }
+
+            .dewcalendar .TitleStyle td {
+                border: none;
+            }
+
+                .dewcalendar .TitleStyle td a {
+                    color: #fff !important;
+                }
+
+        .myCalendar tr {
+            border-bottom: solid 1px #ddd;
+        }
+
+        td.TitleStyle {
+            border: none !important;
+        }
+
+        .sizeselector {
+            margin: 5px;
+            float: left;
+        }
+
+        .susrow {
+            margin-right: -15px;
+            margin-left: -15px;
+            width: 80%;
+        }
+
+        @media (min-width: 1000px) {
+            .col-md-3 {
+                width: 193px;
+            }
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="/Scripts/IntlDate.js" type="text/javascript"></script>
+    <script src="/Scripts/PersianDate.js" type="text/javascript"></script>
+    
+</head>
+<body class="persian">
+    <!--<div class="black-banner"></div>-->
+
+    <div class="centerview">
+        <div class="blackheader">
+            <div class="container">
+                <img src="/Images/IranFlag.svg" alt="ایران" class="iran-flag" width="27" height="20" />
+                <span class="hidden-xs">به‌روزرسانی :</span>
+                <label id="lbldt"> یکشنبه 10 آبان ماه ساعت 09:18:23</label>
+                <a id="marketstat" class="marketstat" 
+                    title="Market is opened"
+                    data="True">
+                    <i class="icon-sun"></i>
+                </a>
+                <div class="floatleft" style="word-spacing: 1px;">
+                    <a href="/" class="NotNeedQueryString">فارسی</a>
+                    |&nbsp;<a href="/default.aspx?lang=en" class="NotNeedQueryString">English</a>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        <div class="headerL2 clearfix">
+            <div class="container">
+                <div class="nav-icon">
+                    <span></span>
+                </div>
+                <a class="logo" href="/">
+                    <img src="/Images/logo.svg" alt="فرابورس ایران" height="71" /></a>
+                <ul class="level1 clearfix">
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            اطلاعات شرکت</span>
+                        <div class="sub-menu">
+                            <ul class="sub-menu-list">
+                                <li><a target="_blank" href="/BOD.aspx">
+                                    هیئت مدیره</a></li>
+                                <li><a target="_blank" href="/CommitteeMembers.aspx">
+                                    کمیته‌های حاکمیتی و تخصصی هیئت‌مدیره</a></li>
+
+                                
+                                
+                                <li><a target="_blank" href="/Files/ارکان استراتژی سند راهبردی دوره چهارم.pdf"> ارکان استراتژی سند راهبردی دوره چهارم</a></li>
+
+                                <li><a target="_blank" class="NotNeedQueryString" href="/Files/مسئولیت اجتماعی.pdf">
+                                    مسئولیت اجتماعی</a></li>
+                                 <li>
+     <a target="_blank" class="NotNeedQueryString" href="/Files/بیانیه چشم_انداز.pdf">
+         بیانیه چشم‌انداز
+     </a>                       </li>
+
+                                    <li><a target="_blank" href="/Managment.aspx">
+                                    چارت سازمانی</a></li>
+                           
+                                <li><a target="_blank" href="/cms.aspx?tabId=321">
+                                    تاریخچه فرابورس</a></li>
+
+                                <li><a target="_blank" href="/Files/asanameh.pdf">
+                                    اساسنامه</a></li>
+
+                                 <li><a target="_blank" href="/cms.aspx?tabId=241">
+                                    گزارش‌های مالی</a></li>
+                                <li><a target="_blank" href="/InvestorRelations/InvestorRelations.aspx">
+                                    امور سهام</a></li>
+
+                                <li><a target="_blank" class="NotNeedQueryString" href="https://farasun.ifb.ir/PublicReport/ShowAllBrokers">
+                                    لیست کارگزاران عضو</a></li>
+
+                                <li><a target="_blank" href="/ContactInfo.aspx">
+                                    تماس با ما</a></li>
+                                
+                                
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            پذیرش</span>
+
+                        <div class="sub-menu" style="padding: 38px;" >
+                            <ul class="sub-menu-list-paziresh">
+                                <li>
+                                    <span class="sub-menu__header">
+                                        پذیرش
+                                    </span>    
+                                    <ul>
+                                        
+                                        
+                                           <li><a style="color: #8f423e" target="_blank" class="NotNeedQueryString"  href="/listing/ListingBoardNewFormat.aspx" >
+                                            اعضای هیئت پذیرش</a></li>
+
+                                        
+
+                                        <li><a style="color: #8f423e" target="_blank" href="/ListingFiles.aspx">
+
+                                            فرم‌ها
+                                            </a></li>
+                                         <li><a target="_blank" class="NotNeedQueryString" href="https://farasun.ifb.ir/PublicReport/ShowListingConsultants">
+                                            مشاوران پذیرش</a></li>
+                                         <li><a href="https://www.ifb.ir/FAQ.aspx?Id=2">
+                                            سوالات متداول</a></li>
+
+                                       
+
+
+                                        
+                                       
+                                        
+
+                                       
+                                           
+                                       </ul>
+
+
+
+
+
+                                </li>
+                                <li>
+                                    <span class="sub-menu__header">
+                                        اطلاعات آماری</span>
+                                       
+
+                                      <ul>
+                                          <li><a target="_blank" href="/listing/ListingFileStatus.aspx">
+                                            وضعیت شرکت های پذیرش شده</a></li>
+
+                                           
+
+                                           
+                                        
+
+                                        
+
+                                       
+
+                                       
+                                        
+                                         
+                                           <li><a target="_blank" href='/Files/listing/PerformanceOfAdmissionsCounselors.xlsx'">
+                                            عملکرد مشاوران پذیرش</a></li>
+
+
+                                        <li><a target="_blank" href='/Files/CrowdFunding/گزارش عملکرد شرکتهای ارزش گذار1404.xlsx'">
+                                        عملکرد شرکت های ارزش گذار</a></li>
+
+                                       
+                                        </ul>
+
+                                    
+                                    
+                                </li>
+                            </ul>
+                            <ul class="sub-menu-list">
+                                <li>
+                                    
+                                    <ul>
+                                        
+                                     
+                                    </ul>
+                                </li>
+                                
+
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            بازارها و محصولات</span>
+
+                        <div class="sub-menu">
+                            <ul class="sub-menu-list">
+                                <li>
+                                    <ul>
+                                        <li><a class="sub-menu__header" href="/markets.aspx?id=1">
+                                            بازار اول</a></li>
+                                        <li><a class="sub-menu__header" href="/markets.aspx?id=2">
+                                            بازار دوم</a></li>
+                                        <li><a class="sub-menu__header" href="/markets.aspx?id=4">
+                                            بازار نوآفرین</a></li>
+                                        <li><a class="sub-menu__header" href="/markets.aspx?id=3">
+                                            بازار پایه</a></li>
+                                        <li><a class="sub-menu__header" href="/markets.aspx?id=6">
+                                            بازار توافقی</a></li>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                بازار سوم</span>
+                                            <ul>
+                                                
+
+                                                <li><a target="_blank" href="/ThirdMarket/ThirdMarketMenu.aspx">
+                                                    عرضه یکجا</a></li>
+
+                                                <li><a target="_blank" href="/ThirdMarket/UnderWritingMenu.aspx">
+                                                    پذیره نویسی</a></li>
+
+                                                
+                                            </ul>
+                                        </li>
+
+                                        
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <ul class="sub-menu-list">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                ابزار و نهادها</span>
+                                            <ul>
+                                                <li><a target="_blank" href="/cms.aspx?tabId=208">
+                                                    صندوق‌های سرمایه گذاری زمین و ساختمان</a></li>
+                                                <li><a target="_blank" href="/ETF.aspx">
+                                                    صندوق‌های سرمایه گذاری قابل معامله(ETF)</a></li>
+                                                <li><a target="_blank" href="/MFI/Reit.aspx">
+                                                    صندوق‌های املاک و مستغلات</a></li>
+                                                <li><a target="_blank" href="/MFT/VC.aspx">
+                                                    صندوق‌های جسورانه وخصوصی</a></li>
+                                                <li><a target="_blank" href="/MFI/FinancialInstrument.aspx">
+                                                    اوراق تامین مالی استاندارد</a></li>
+                                                <li><a target="_blank" href="/MFI/qualifiedMFI.aspx">
+                                                    اوراق تامین مالی واجد شرایط خاص</a></li>
+                                                <li><a target="_blank" href="/cms.aspx?tabId=209">
+                                                    اسناد خزانه اسلامی</a></li>
+                                                <li><a target="_blank" href="/cms.aspx?tabId=229">
+                                                    تسهیلات مسکن</a></li>
+                                                <li><a target="_blank" href="/Finstars/CrowdFunding.aspx">
+                                                    تامین مالی جمعی</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                ابزارهای مشتقه</span>
+                                            <ul>
+                                                <li><a target="_blank" href="/markets.aspx?id=5">
+                                                    اوراق تبعی</a></li>
+                                                <li><a target="_blank" href="/markets.aspx?id=7">
+                                                    اوراق اختیار معامله</a></li>
+                                                 <li><a target="_blank" href="/markets.aspx?id=8">
+                                                    قراردادهای آتی</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            مرکز داده</span>
+
+                        <div class="sub-menu">
+                            <ul class="sub-menu-list">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                شاخص</span>
+                                            <ul>
+                                                <li><a target="_blank" href="/IFBindex.aspx#TotalDiv_tab">
+                                                    شاخص کل فرابورس ایران</a></li>
+                                                <li><a target="_blank" href="/IFBindex.aspx#TotalSameWeightDiv_tab">
+                                                    شاخص کل هم وزن فرابورس ایران</a></li>
+                                                <li><a target="_blank" href="/IFBindex.aspx#PriceDiv_tab">
+                                                    شاخص قیمت فرابورس ایران</a></li>
+                                                <li><a target="_blank" href="/IFBindex.aspx#SameWeightPriceDiv_tab">
+                                                    شاخص قیمت هم وزن فرابورس ایران</a></li>
+
+                                                <li><a target="_blank" href="/SukukIndex.aspx">
+                                                    شاخص کل صکوک فرابورس ایران(Sindex)</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                دیدبان</span>
+                                            <ul>
+                                                <li><a target="_blank" href="/StockQoute.aspx">
+                                                    دیدبان بازار</a></li>
+                                                <li><a target="_blank" href="/OptionStockQuote.aspx">
+                                                    دیدبان بازار اوراق مشتقه</a></li>
+                                            </ul>
+                                        </li>
+                                        
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                گزارش های آماری
+                                            </span>
+                                            <ul>
+                                                <li><a target="_blank" href="/datareporter/periodicalreport.aspx">
+                                                    گزارش‌های دوره ای</a></li>
+                                                <li><a target="_blank" href="/datareporter/DailySukukTrades.aspx">
+                                                    آمار معاملات روزانه اوراق مالی اسلامی</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                ارزش بازار
+                                            </span>
+                                            <ul>
+                                                <li><a target="_blank" href="/SepratedByIndustry.aspx">
+                                                    ارزش بازار به تفکیک صنعت</a></li>
+                                                <li><a target="_blank" href="/DataReporter/GroupByMarket.aspx">
+                                                    ارزش بازار به تفکیک بازار</a></li>
+                                                <li><a target="_blank" href="/DataReporter/MarketMap.aspx">
+                                                    ارزش بازار به تفکیک نماد</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="sub-menu__header" target="_blank" href="/DataReporter/MarketMap.aspx">
+                                            نقشه بازار</a></li>
+                                        <li>
+                                            <span class="sub-menu__header">
+                                                بازده اوراق</span>
+                                            <ul>
+                                                <li><a target="_blank" href="/YTM.aspx">
+                                                    محاسبه بازده اوراق</a></li>
+                                                <li><a target="_blank" href="/NelsonIndex.aspx">
+                                                    منحنی بازده اوراق با درآمد ثابت</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                            <ul class="sub-menu-list">
+                           
+                                <li><a class="sub-menu__header" target="_blank" href="/OptionCalculation.aspx">
+                                    ماشین حساب ارزش‌گذاری اختیار معامله</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/Files/IFB Commission Rates2.pdf">
+                                    کارمزد فرابورس</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/RnD.aspx">
+                                    مطالعات و پژوهش‌ها</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/Issuers.aspx?id=2">
+                                    افزایش سرمایه در جریان</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/IFBSymbolState.aspx">
+                                    وضعیت شفافیت اطلاعاتی ناشران</a></li>
+                                
+                                <li><a class="sub-menu__header" target="_blank" href="/DataReporter/IssuersReport.aspx">
+                                    تاریخچه اطلاعات مالی ناشران فرابورسی</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/MarketMaker/MarketMakingMenu.aspx">
+                                    فهرست اطلاعات بازارگردانی </a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/datareporter/IPO.aspx">
+                                    فهرست عرضه‌های اولیه</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/ThirdMarket/AllUnderWrited.aspx">
+                                    فهرست اوراق بهادار پذیره نویسی شده</a></li>
+                            
+                               
+                                <li><a class="sub-menu__header" target="_blank" href="/DataReporter/SuspendedSymbols.aspx">
+                                    فهرست نمادهای متوقف</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/AllDeletedSymbol.aspx">
+                                    فهرست نمادهای حذف شده</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/Issuers.aspx?id=5">
+                                    انتقال بین بازارهای اول، دوم، نوآفرین و پایه
+</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/Issuers.aspx?id=3">
+                                    شرکت های انتقالی به بورس تهران</a></li>
+                                <li><a class="sub-menu__header" target="_blank" href="/Issuers.aspx?id=6">
+                                    شرکت‌های انتقالی از بورس تهران</a></li>
+                                
+                                <li><a class="sub-menu__header" target="_blank" href="/PublisherCorporateGovernaceScore.aspx">
+                                     حاکمیت شرکتی ناشران</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            سامانه‌ها و خدمات</span>
+
+                        <div class="sub-menu">
+                            <ul class="sub-menu-list">
+                                <li><a target="_blank" class="NotNeedQueryString" href="https://farasun.ifb.ir/User/Login">
+                                    سامانه فراسان</a></li>
+                                <li><a target="_blank" class="NotNeedQueryString" href="https://farasun.ifb.ir/RequestFollowUp/CompanyLogin">
+                                    سامانه پیگیری درخواست شرکتهای متقاضی</a></li>
+
+                                
+                               
+                                <li><a target="_blank" href="/MFI/ITBTracking.aspx">
+                                    سامانه رهگیری اسناد خزانه
+                                </a></li>
+                                <li><a target="_blank" href="https://farasun.ifb.ir/didban/didban">
+                                    سامانه گزارش‌دهی تخلفات
+                                </a></li>
+                                
+                                
+                                <li><a target="_blank" class="NotNeedQueryString" href="https://cf.ifb.ir/User/Login">
+                                    تامین مالی جمعی</a></li>
+                                 <li><a target="_blank" class="NotNeedQueryString" href="https://portal.ifbstock.hamkaransystem.cloud">
+                                   پرتال سهامداران</a></li>
+                                 
+                                
+                            </ul>
+                        </div>
+                    </li>
+                   
+
+                       
+                             
+                               
+                          
+                               
+
+                        
+                           <li class="has-sub">
+       <span class="menu-anchor">
+           <a target="_blank" href="/DataReporter/LegalProvisionReport.aspx"" class="NotNeedQueryString">قوانین و مقررات</a>
+
+       </span>
+
+   </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            <a target="_blank" href="https://www.ifb.ir/CareerOpportunities.aspx" class="NotNeedQueryString">همکاری با ما</a>
+
+                        </span>
+
+                    </li>
+                    <li class="has-sub">
+                        <span class="menu-anchor">
+                            <a target="_blank" href="https://faraboursetv.com/" class="NotNeedQueryString">فرابورس تی‌وی</a>
+                        </span>
+                    </li>
+                </ul>
+                <div class="searchbar">
+                    <input id="autocomplete" placeholder="جستجوی نماد" />
+                    <i class="icon-search"></i>
+                </div>
+                <div class="current-date hidden">
+                    <table id="Table1" class="floatleft datebar">
+	<tr>
+		<td id="dayOfMonth" class="dayOfMonth">10</td>
+		<td>
+                                <div>
+                                </div>
+                            </td>
+		<td id="monthyear">آبان<br/>1405</td>
+	</tr>
+</table>
+
+                    <i class="icon-calendar"></i>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div class="container mobile-container">
+            <div class="main-column">
+                <div class="contentpanel">
+                    
+    <div class="card-box">
+        <form method="post" action="./SuspendedSymbols.aspx" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="FA1C374F" />
+</div>
+            
+            <div class="cmstitr">
+                <h1 id="ContentPlaceHolder1_cmstitr" class="indTitle">فهرست نمادهای متوقف</h1>
+            </div>
+            <div class="tableParent">
+                <div>
+
+                    <div id="ContentPlaceHolder1_filterpanel" class="filterdiv form-group">
+
+                        <div class="Legalrow">
+                            <div class="col-md-3 col-sm-6 col-xs-12 form-group">
+                                <label>نماد</label>
+                                <input name="ctl00$ContentPlaceHolder1$txtQuote" type="text" maxlength="40" id="ContentPlaceHolder1_txtQuote" class="form-control " autocomplete="off" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 form-group">
+                                <label>بازار</label>
+                                <input name="ctl00$ContentPlaceHolder1$txtMarket" type="text" maxlength="40" id="ContentPlaceHolder1_txtMarket" class="form-control" autocomplete="off" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 form-group">
+                                <label>نام شرکت</label>
+                                <input name="ctl00$ContentPlaceHolder1$txtCompanyName" type="text" id="ContentPlaceHolder1_txtCompanyName" class="form-control" />
+                            </div>
+                            <div class="col-md-3 col-sm-6 col-xs-12 form-group">
+                                <label> تاریخ توقف از</label>
+                                <input name="ctl00$ContentPlaceHolder1$txtSusDateFrom" type="text" id="ContentPlaceHolder1_txtSusDateFrom" class="form-control" />
+                            </div>
+
+                            <div class="col-md-3 col-sm-6 col-xs-12 form-group">
+                                <label> تاریخ توقف تا</label>
+                                <input name="ctl00$ContentPlaceHolder1$txtSusDateTo" type="text" id="ContentPlaceHolder1_txtSusDateTo" class="form-control" />
+                            </div>
+
+                        </div>
+
+                        <div style="float: left;" class="col-md-3 col-sm-6 col-xs-12 form-group">
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$BtnSearch" value="جستجو" id="ContentPlaceHolder1_BtnSearch" class="mybtn mybtnred" style="width:100px;" />
+                            <input type="submit" name="ctl00$ContentPlaceHolder1$BtnCancelSearch" value="لغو جستجو" id="ContentPlaceHolder1_BtnCancelSearch" class="mybtn" style="width:100px;" />
+                        </div>
+                        <span id="ContentPlaceHolder1_Label3" class="lblerror"></span>
+
+                    </div>
+
+                </div>
+                <div class="tab-content no-padding">
+                    <div>
+	<table class="mGrid" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_SuspendedSymbolsGrd" style="border-collapse:collapse;">
+		<tr>
+			<th scope="col">ردیف</th><th scope="col">نماد</th><th scope="col">بازار</th><th scope="col">نام شرکت</th><th scope="col">تاریخ توقف</th><th scope="col">تاریخ اصلاحیه</th><th scope="col">دلیل توقف</th>
+		</tr><tr>
+			<td>1</td><td>
+                                    فتوسا
+                                </td><td>
+                                    بازار اول
+                                </td><td>
+                                    تولید و توسعه سرب روی ایرانیان
+                                </td><td>1405/08/10 </td><td>
+                                    
+                                </td><td> </td>
+		</tr><tr class="alt">
+			<td>2</td><td>
+                                    شلرد
+                                </td><td>
+                                    تابلو پایه زرد
+                                </td><td>
+                                    کود شیمیایی اوره لردگان
+                                </td><td>1405/08/10 </td><td>
+                                    
+                                </td><td> </td>
+		</tr><tr>
+			<td>3</td><td>
+                                    وحافظ
+                                </td><td>
+                                    تابلو پایه زرد
+                                </td><td>
+                                    بیمه حافظ
+                                </td><td>1405/08/09 </td><td>
+                                    
+                                </td><td> </td>
+		</tr></table></body></html>
