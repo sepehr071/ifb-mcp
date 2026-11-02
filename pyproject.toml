@@ -1,6 +1,6 @@
 [project]
 name = "ifb-mcp"
-version = "0.1.0"
+version = "0.1.1"
 description = "Unofficial read-only MCP server for Iran Fara Bourse (ifb.ir): bond and sukuk yields, treasury bills, IPOs, announcements, market stats."
 readme = "README.md"
 license = "MIT"

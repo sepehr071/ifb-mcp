@@ -138,7 +138,7 @@ def _get_client() -> tuple[httpx.AsyncClient, asyncio.Semaphore]:
                 max_connections=2 * MAX_CONCURRENCY,
             ),
             headers=HEADERS,
-            timeout=httpx.Timeout(30, connect=8),
+            timeout=httpx.Timeout(30, connect=5),  # fail fast: 3 attempts must not add up to 40 s
             limits=httpx.Limits(max_connections=2 * MAX_CONCURRENCY),
             follow_redirects=False,
             trust_env=False,
